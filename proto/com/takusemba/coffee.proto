@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.takusemba;
+
+option java_package = "com.takusemba.proto";
+
+enum Size {
+    SMALL = 0;
+    MEDIUM = 1;
+    LARGE = 2;
+}
+
+message Coffee {
+    string name = 1; // espresso
+    double price = 2; // 340
+    Size size = 3; // small / medium / large
+    bool isAvailable = 4; // true / false
+}
